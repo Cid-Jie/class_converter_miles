@@ -3,7 +3,6 @@
 class Speedometer
 {
     public const MILES = 0.621;
-    public const KM = 1.609;
 
     public static function converterKmToMiles($km)
     {
@@ -14,7 +13,7 @@ class Speedometer
 
     public static function convertMilesToKm($miles)
     {
-        $result = $miles / self::KM;
+        $result = $miles / self::MILES;
         return $miles . ' miles fait ' . round($result, 2) . ' km.';
     }
 }
