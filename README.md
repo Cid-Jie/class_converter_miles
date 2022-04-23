@@ -3,4 +3,4 @@
 Page in localhost :
 
 10 km fait 6.21 miles.
-16 miles fait 9.94 km.
+16 miles fait 25.76 km.
