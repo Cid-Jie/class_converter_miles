@@ -3,22 +3,21 @@
 class Speedometer
 {
     public const MILES = 0.621;
+    public const KM = 1.609;
 
     public static function converterKmToMiles($km)
     {
         $result = self::MILES * $km;
-        return $result;
+        return $km . ' km fait ' . $result . ' miles.';
 
     }
 
-    public static function convertMilesToKm($km)
+    public static function convertMilesToKm($miles)
     {
-        $result = $km / self::MILES;
-        return round($result, 2);
+        $result = $miles / self::KM;
+        return $miles . ' miles fait ' . round($result, 2) . ' km.';
     }
 }
 
 
-echo Speedometer::converterKmToMiles(10) .'</br>';
 
-echo Speedometer::convertMilesToKm(16);
